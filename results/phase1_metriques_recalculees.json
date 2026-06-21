@@ -1,0 +1,92 @@
+{
+  "description": "Phase 1 metrics recomputed after Prof LALEYE feedback",
+  "modifications": [
+    "Symmetric error taxonomy (comment #4)",
+    "Non-redundant score formula (comments #6, #12)",
+    "Logarithmic RTFx normalization (comment #8)"
+  ],
+  "parameters": {
+    "alpha_twer": 2.0,
+    "w_segmental": 0.45,
+    "w_tonal": 0.45,
+    "w_rtfx": 0.1,
+    "seuil_cer_dsq": 2.0
+  },
+  "results_by_model": {
+    "afrihubert": {
+      "wer": 1.0302587646076795,
+      "wer_segmental": 1.0302065943238732,
+      "wer_tonal": 0.4234661936560935,
+      "twer": 1.8771389816360602,
+      "n_mots_total": 19168,
+      "n_erreurs_tonales": 8117,
+      "n_erreurs_segmentales": 19747,
+      "n_erreurs_mixtes": 8116,
+      "cer": 3.6012,
+      "rtfx": 188.8,
+      "rtfx_norm": 1.0,
+      "score": 0.0,
+      "dsq": true
+    },
+    "mms_1b": {
+      "wer": 0.8344115191986644,
+      "wer_segmental": 0.5955237896494157,
+      "wer_tonal": 0.46431552587646074,
+      "twer": 1.5241548414023371,
+      "n_mots_total": 19168,
+      "n_erreurs_tonales": 8900,
+      "n_erreurs_segmentales": 11415,
+      "n_erreurs_mixtes": 4321,
+      "cer": 0.3188,
+      "rtfx": 45.4,
+      "rtfx_norm": 0.7314755538091631,
+      "score": 0.49621986339427193,
+      "dsq": false
+    },
+    "omniasr": {
+      "wer": 0.9297266277128547,
+      "wer_segmental": 0.9218489148580968,
+      "wer_tonal": 0.10037562604340568,
+      "twer": 1.1226001669449082,
+      "n_mots_total": 19168,
+      "n_erreurs_tonales": 1924,
+      "n_erreurs_segmentales": 17670,
+      "n_erreurs_mixtes": 1773,
+      "cer": 0.4246,
+      "rtfx": 31.9,
+      "rtfx_norm": 0.6659344349350695,
+      "score": 0.5065924000878308,
+      "dsq": false
+    },
+    "seamlessm4t": {
+      "wer": 1.1289127712854758,
+      "wer_segmental": 1.1285475792988313,
+      "wer_tonal": 0.1100271285475793,
+      "twer": 1.34860183639399,
+      "n_mots_total": 19168,
+      "n_erreurs_tonales": 2109,
+      "n_erreurs_segmentales": 21632,
+      "n_erreurs_mixtes": 2102,
+      "cer": 1.0024,
+      "rtfx": 8.93,
+      "rtfx_norm": 0.4375854399242546,
+      "score": 0.4442463361460148,
+      "dsq": false
+    },
+    "whisper_small": {
+      "wer": 1.6516068447412353,
+      "wer_segmental": 1.650928631051753,
+      "wer_tonal": 0.05983931552587646,
+      "twer": 1.770607262103506,
+      "n_mots_total": 19168,
+      "n_erreurs_tonales": 1147,
+      "n_erreurs_segmentales": 31645,
+      "n_erreurs_mixtes": 1134,
+      "cer": 1.701,
+      "rtfx": 2.16,
+      "rtfx_norm": 0.21932489763349733,
+      "score": 0.4450047977767053,
+      "dsq": false
+    }
+  }
+}

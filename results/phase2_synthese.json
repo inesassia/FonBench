@@ -1,0 +1,68 @@
+{
+  "description": "Phase 2 — Adaptation experiments (LoRA vs Full Fine-tuning) on MMS-1b for Fon",
+  "base_model": "facebook/mms-1b-all",
+  "dataset": "alaleye/fon",
+  "test_set": {
+    "n_examples": 3541,
+    "n_speakers": 7,
+    "speakers": [
+      "antoine",
+      "cyrielle",
+      "frejus",
+      "helmut",
+      "melissa",
+      "miguel",
+      "mikael"
+    ]
+  },
+  "experiments": {
+    "zero_shot_mms_1b": {
+      "WER": 0.8344,
+      "CER": 0.3188,
+      "ratio_trained": 0.0
+    },
+    "LoRA-1": {
+      "strategy": "LoRA (r=8)",
+      "WER": 0.322,
+      "CER": 0.0908,
+      "params_trained": 2031411,
+      "ratio_trained": 0.0021,
+      "lr": 0.0002,
+      "duration_min": 73
+    },
+    "LoRA-2": {
+      "strategy": "LoRA (r=32)",
+      "WER": 0.2875,
+      "CER": 0.0818,
+      "params_trained": 7929651,
+      "ratio_trained": 0.0082,
+      "lr": 0.0002,
+      "duration_min": 73
+    },
+    "FT-1": {
+      "strategy": "Full FT",
+      "WER": 0.2432,
+      "CER": 0.0717,
+      "params_trained": 966679987,
+      "ratio_trained": 1.0,
+      "lr": 1e-05,
+      "duration_min": 120
+    },
+    "FT-2": {
+      "strategy": "Full FT",
+      "WER": 0.1927,
+      "CER": 0.0602,
+      "params_trained": 966679987,
+      "ratio_trained": 1.0,
+      "lr": 5e-05,
+      "duration_min": 120
+    }
+  },
+  "best_model": "FT-2",
+  "hub_models": {
+    "FT-2": "https://huggingface.co/inesassia/fonbench-mms-1b-fon-ft",
+    "LoRA-2": "https://huggingface.co/inesassia/fonbench-mms-1b-fon-lora"
+  },
+  "leaderboard": "https://huggingface.co/spaces/inesassia/fonbench-leaderboard",
+  "wandb_project": "https://wandb.ai/inesassiahounkponou-esgis/FonBench"
+}

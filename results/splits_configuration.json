@@ -1,0 +1,63 @@
+{
+  "description": "Splits définitifs du corpus alaleye/fon après re-stratification (Fon-Bench).",
+  "graine_aleatoire": 42,
+  "locuteurs_transferes_train_vers_test": [
+    "mikael",
+    "miguel",
+    "melissa"
+  ],
+  "statistiques": {
+    "train": {
+      "n_exemples": 5488,
+      "n_locuteurs": 20,
+      "proportion": 52.8
+    },
+    "validation": {
+      "n_exemples": 1373,
+      "proportion": 13.2,
+      "note": "sous-ensemble du train (split 80/20)"
+    },
+    "test": {
+      "n_exemples": 3541,
+      "n_locuteurs": 7,
+      "proportion": 34.0
+    },
+    "total": {
+      "n_exemples": 10402,
+      "n_locuteurs_uniques": 27
+    }
+  },
+  "locuteurs_par_split": {
+    "train": [
+      "armandine",
+      "boris",
+      "davacan",
+      "denise",
+      "dolores",
+      "donald",
+      "emmanuel",
+      "eunice",
+      "hans",
+      "herman",
+      "inconnu",
+      "lorseque",
+      "mario",
+      "narcisse",
+      "nazer",
+      "osias",
+      "parisius",
+      "rose",
+      "sorel",
+      "stephanie"
+    ],
+    "test": [
+      "antoine",
+      "cyrielle",
+      "frejus",
+      "helmut",
+      "melissa",
+      "miguel",
+      "mikael"
+    ]
+  }
+}
