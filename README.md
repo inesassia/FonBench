@@ -1,6 +1,6 @@
 # FonBench
 
-ASR benchmark and adaptation for the **Fon language** — a low-resource African tonal language (~8M speakers in Benin).
+ASR benchmark and adaptation for the **Fon language** a low-resource African tonal language (~8M speakers in Benin).
 
 ## Overview
 
@@ -71,7 +71,7 @@ FonBench/
 
 ## Author
 
-**Inès Assia HOUNKPONOU** — Master in ASR, ESGIS Bénin, 2026
+**Inès Assia HOUNKPONOU**  Master in AI, ESGIS Bénin, 2026
 
 **Supervisors:**  
 - **Dr Mickael MOUSSE**  
