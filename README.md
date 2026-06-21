@@ -8,7 +8,7 @@ This repository contains the code and results of a Master's thesis on automatic 
 
 ## Results (test set, 3541 examples, 7 unseen speakers)
 
-### Phase 1 — Zero-shot evaluation
+### Phase 1 : Zero-shot evaluation
 
 | Model | WER | CER | Status |
 |---|---|---|---|
@@ -19,7 +19,7 @@ This repository contains the code and results of a Master's thesis on automatic 
 | Whisper-small | 165.16% | 170.10% | Evaluated |
 | AfriHuBERT | 103.03% | 360.12% | Disqualified (CER>200%) |
 
-### Phase 2 — Adaptation on MMS-1b
+### Phase 2 : Adaptation on MMS-1b
 
 | Configuration | Strategy | Params trained | WER | CER |
 |---|---|---|---|---|
